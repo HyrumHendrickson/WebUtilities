@@ -1,0 +1,15 @@
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: monthly
+    open-pull-requests-limit: 5
+    groups:
+      dev-tooling:
+        patterns: ['eslint*', '@eslint/*', 'globals', 'prettier']
+    # Vendored libraries are pinned. After merging an update, run `npm run vendor:sync`.
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: monthly

@@ -1,0 +1,10 @@
+* text=auto eol=lf
+*.png binary
+*.ico binary
+*.woff2 binary
+*.wasm binary
+
+# Third-party code is vendored and should not skew language statistics or diffs.
+vendor/** linguist-vendored
+vendor/** -diff
+assets/fonts/** linguist-vendored

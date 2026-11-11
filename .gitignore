@@ -1,0 +1,14 @@
+# Dependencies
+node_modules/
+
+# Build and test output
+_site/
+coverage/
+
+# Logs and editor files
+*.log
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json

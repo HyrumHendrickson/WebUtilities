@@ -1,0 +1,106 @@
+/* Design tokens.
+   Palette is taken from the logo: pale sky paper, a navy ink outline, sky-blue
+   fills, and small touches of sun yellow and blush pink. */
+
+@font-face {
+  font-family: 'Nunito';
+  src: url('../assets/fonts/nunito-latin-wght-normal.woff2') format('woff2');
+  font-weight: 200 1000;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  color-scheme: light;
+
+  --font-ui: 'Nunito', ui-rounded, 'SF Pro Rounded', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono: ui-monospace, 'SF Mono', 'Cascadia Code', 'Roboto Mono', Menlo, Consolas, monospace;
+
+  --sky: #8fd0ee;
+  --sun: #f7d154;
+  --blush: #f4a89a;
+
+  --bg: #f1f8fc;
+  --surface: #ffffff;
+  --surface-2: #e8f3fa;
+  --ink: #24324a;
+  --ink-soft: #55657f;
+  --line: #c4dbe9;
+  --outline: #24324a;
+  --accent-ink: #14344b;
+  --link: #1f6f9f;
+  --focus: #1f6f9f;
+
+  --tint-sky: #d6edf9;
+  --tint-sun: #fcecaa;
+  --tint-blush: #f9d5cd;
+
+  --danger: #a93a30;
+  --danger-bg: #fdeceb;
+  --ok: #1b7048;
+  --ok-bg: #e3f5ec;
+  --warn: #6f5200;
+  --warn-bg: #fff4cf;
+
+  --shadow-ink: 3px 3px 0 var(--sky);
+  --chevron: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%2355657f' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+
+  --r-sm: 10px;
+  --r-md: 16px;
+  --r-lg: 22px;
+
+  --header-h: 64px;
+  --sidebar-w: 272px;
+}
+
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --bg: #0d1626;
+  --surface: #142137;
+  --surface-2: #1a2b46;
+  --ink: #e6f0f8;
+  --ink-soft: #a3b6cb;
+  --line: #2a4060;
+  --outline: #8fd0ee;
+  --accent-ink: #0d2233;
+  --link: #8fd0ee;
+  --focus: #8fd0ee;
+  --tint-sky: #1d3a58;
+  --tint-sun: #4a4220;
+  --tint-blush: #4d2f33;
+  --danger: #f4958b;
+  --danger-bg: #3a1f22;
+  --ok: #7fdcab;
+  --ok-bg: #153227;
+  --warn: #f4d57a;
+  --warn-bg: #3a3217;
+  --shadow-ink: 3px 3px 0 #223a5a;
+  --chevron: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23a3b6cb' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    color-scheme: dark;
+    --bg: #0d1626;
+    --surface: #142137;
+    --surface-2: #1a2b46;
+    --ink: #e6f0f8;
+    --ink-soft: #a3b6cb;
+    --line: #2a4060;
+    --outline: #8fd0ee;
+    --accent-ink: #0d2233;
+    --link: #8fd0ee;
+    --focus: #8fd0ee;
+    --tint-sky: #1d3a58;
+    --tint-sun: #4a4220;
+    --tint-blush: #4d2f33;
+    --danger: #f4958b;
+    --danger-bg: #3a1f22;
+    --ok: #7fdcab;
+    --ok-bg: #153227;
+    --warn: #f4d57a;
+    --warn-bg: #3a3217;
+    --shadow-ink: 3px 3px 0 #223a5a;
+    --chevron: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23a3b6cb' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+  }
+}
