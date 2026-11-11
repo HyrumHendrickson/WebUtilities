@@ -6,6 +6,7 @@
 
 <p align="center">
   Small, private tools for everyday web tasks. Everything runs in your browser, so your files and text never leave your device.
+  https://hyrumhendrickson.github.io/WebUtilities/
 </p>
 
 <p align="center">
